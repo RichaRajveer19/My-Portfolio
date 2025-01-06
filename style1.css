@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --main-color:#d028e3;
+}
+*{
+    font-family: "Inter", serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:white; 
+    padding-left: 30rem;
+}
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #111;
+    text-transform: uppercase;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+} 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 5%;
+}
+.btn:hover{
+    background: #111;
+    letter-spacing: 0.5rem;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+header .logo{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+header .logo span{
+    text-transform: uppercase;
+    color:var(--main-color);
+}
+header .navbar a{
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    margin: 2rem 0;
+    transition: all 0.3s ease;
+}
+header .navbar a:hover{
+    letter-spacing: .2rem;
+    color: var(--main-color);
+    border-bottom: 2px solid darkmagenta;
+    transform:translateY(-2px);
+}
+header .navbar a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #d028e3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+header .navbar a:hover::before{
+    width: 100%;
+}
+header .follow a{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0.7rem;
+}
+header .follow a:hover{
+    color: var(--main-color);
+}
+#menu-bars{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: .5rem;
+    padding: 2rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+.Home{
+    display: flex;
+    align-items: center;
+    flex-wrap: warp;
+    gap: 1.5rem;
+}
+.Home .image{
+    flex: 1 1 40rem;
+}
+.Home .image image{
+    width: 100%;  
+}
+.Home .content{
+    flex: 1 1 40rem;  
+}
+.Home .content .hello{
+    font-family: 2rem;
+    color: var(--main-color);
+}
+.Home .content h3{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.Home .content h3{
+    font-size: 4.5rem;
+    color: #111;
+    text-transform: uppercase;
+}
+.Home .content h3 span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+.Home .content .info{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+ .aenim{
+    color: darkmagenta;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+    overflow: hidden;
+ }
+ .line{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 60px;
+ }
+ .line:first-child{
+    animation: animet 5s infinite;
+ }
+@keyframes animet{
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -80px;
+    }
+}
+
+
+
+.Home .content .text{
+    font-size: 1.7rem;
+    color: #666;
+    padding: .5rem 0;
+}
+ .About .row-1{
+    display: flex;
+    flex-wrap: warp;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.About .row-1 .image{
+    flex: 1 1 25rem;
+}
+.About .row-1 .image image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 5rem solid white;
+    border-radius: .5rem;
+    box-shadow:0.5rem 1rem rgb(0,0,0,.1) ;
+}
+.About .row-1 .content{
+    flex: 1 1 50rem;
+}
+.About .row-1 .content h3{
+    color: #666;
+    font-size: 1.7rem;
+    padding: 5rem 0;
+} 
+.About .row-1 .content p{
+    color: #666;
+    font-size: 1.7rem;
+    padding: 2rem 0;
+}
+.About .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: warp;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+.About .row-1 .content .box-container .box{
+    flex:  1 1 20rem;
+}
+.About .row-1 .content .box-container .box span{
+    color: var(--main-color);
+}
+.About .reow-2{
+    color: var(--main-color);
+}
+.About .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.About .row-2 .Skills{
+    flex: 1 1 40rem;
+}
+.About .row-2 .Skills .progress{
+    padding: 1rem 0;
+}
+.About .row-2 .Skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 400;
+}
+.About .row-2 .Skills .progress .bar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+.About .row-2 .Skills .progress .bar span{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--main-color);
+}
+.About .row-2 .Skills .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+.About .row-2 .Skills .progress:nth-child(2) .bar span{
+    width: 90%;
+}
+.About .row-2 .Skills .progress:nth-child(3) .bar span{
+    width: 85%;
+}
+.About .row-2 .Skills .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+.About .row-2 .Skills .progress:nth-child(5) .bar span{
+    width: 80%;
+}
+.About .row-2 .box-container{
+    flex:1 1 40rem;
+}
+.Education.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.Education .box-container .box{
+    position: relative;
+    flex: 1 1 33rem;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 3rem;
+    padding-right: 2rem;
+    border: .5rem solid darkmagenta;
+}
+.Education .box-container .box ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+.Education .box-container .box .content{
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.Education .box-container .box  .content  span{
+    color: #fff;
+    font-size: 2rem;
+    background: var(--main-color);
+    border-radius: 50rem;
+    padding: .4rem 1rem ;
+}
+.Education .box-container .box  .content  h3{
+    font-size: 2rem;
+    padding: 5rem 0;
+    color: #111;
+}
+.Education .box-container .box  .content  p{
+    font-size: 2rem;
+    color: #111;
+}
+.Contact .icons-container{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.Contact.icons-container .icons{
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.contact-form {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+  }
+  form input,
+  textarea {
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsla(260, 100%, 44%, 0.1);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  form input::placeholder,
+  textarea::placeholder {
+    color: var(--text-color);
+  }
+  form textarea {
+    resize: none;
+    height: 200px;
+  }
+  .contact-button {
+    width: 160px;
+    cursor: pointer;
+    background: darkmagenta;
+    color: #fff;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 35%;
+  }
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size:55%;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+    header{
+        left: -120%;
+    }
+    header.active{
+        left: 0%;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        width: 100%;
+    }
+}
