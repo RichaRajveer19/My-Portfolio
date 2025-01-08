@@ -185,9 +185,6 @@ header .follow a:hover{
         margin-top: -80px;
     }
 }
-
-
-
 .Home .content .text{
     font-size: 1.7rem;
     color: #666;
@@ -210,6 +207,7 @@ header .follow a:hover{
     border: 5rem solid white;
     border-radius: .5rem;
     box-shadow:0.5rem 1rem rgb(0,0,0,.1) ;
+    margin-left: 30px;
 }
 .About .row-1 .content{
     flex: 1 1 50rem;
@@ -236,7 +234,8 @@ header .follow a:hover{
 .About .row-1 .content .box-container .box span{
     color: var(--main-color);
 }
-.About .reow-2{
+
+ .About .reow-2{
     color: var(--main-color);
 }
 .About .row{
@@ -265,6 +264,7 @@ header .follow a:hover{
     overflow: hidden;
     height: 1rem;
     border-radius: 50rem;
+    align-items: center;
 }
 .About .row-2 .Skills .progress .bar span{
     display: block;
@@ -289,11 +289,63 @@ header .follow a:hover{
 }
 .About .row-2 .box-container{
     flex:1 1 40rem;
+} 
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    
 }
-.Education.box-container{
+
+.education .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid black;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background: #222;
+    color: white;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: darkmagenta;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(137, 61, 145);
+    background: black;
+}
+/* .Education.box-container{  
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    align-items: center;
 }
 .Education .box-container .box{
     position: relative;
@@ -301,7 +353,8 @@ header .follow a:hover{
     border-left: .2rem solid var(--main-color);
     padding-left: 3rem;
     padding-right: 2rem;
-    border: .5rem solid darkmagenta;
+    margin-left: 3rem;
+    
 }
 .Education .box-container .box ::before{
     content: '';
@@ -328,13 +381,13 @@ header .follow a:hover{
 }
 .Education .box-container .box  .content  h3{
     font-size: 2rem;
-    padding: 5rem 0;
+    padding: 8rem 0;
     color: #111;
 }
 .Education .box-container .box  .content  p{
     font-size: 2rem;
     color: #111;
-}
+/* } */
 .Contact .icons-container{
     display: flex;
     gap: 1.5rem;
@@ -414,4 +467,31 @@ header .follow a:hover{
     header{
         width: 100%;
     }
+    .About .row-2 .Skills .progress .bar{
+        align-items: center;
+        margin-left: 130px;
+        width: 100%;
+    }
+    .About .row-2 .Skills .progress h3{
+        padding-left: 16rem;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+
+     .Education .box-container .box{ 
+        margin-left: 10rem;
+        width: 100%;
+        
+}
+.Education .box-container .box  .content  h3{
+    padding-left: 10px;
+}
+.Education .box-container .box  .content  h1{
+    margin-left: 0;
+}
+.education .box-container .box p{
+    font-size: 2rem;
+}
+
 }
