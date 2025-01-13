@@ -189,7 +189,8 @@ header .follow a:hover{
     border: 1rem solid #fff;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: 100%;
+    
+    
 }
 
 .about .row-1 .content{
