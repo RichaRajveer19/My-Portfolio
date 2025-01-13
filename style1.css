@@ -133,7 +133,7 @@ header .follow a:hover{
     position: relative;
 }
 .rr::before{
-    content: "Web Devloper";
+    content: "Web Developer";
     position: absolute;
     width: 0;
     height: 100%;
