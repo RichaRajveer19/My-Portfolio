@@ -138,7 +138,7 @@ header .follow a:hover{
     width: 0;
     height: 100%;
     overflow: hidden;
-    border-right: 8px solid darkmagenta;
+    border-right: 3px solid darkmagenta;
     transition: 1s ease-in-out;
 }
 .rr:hover::before{
